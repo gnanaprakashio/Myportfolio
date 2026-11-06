@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gnanaprakash D — Cloud, DevOps & AI Engineer</title>
+<meta name="description" content="Portfolio of Gnanaprakash D — Software Engineer focused on Full-Stack Web, Cloud, DevOps and AI. HTML, CSS, JavaScript, React, Node.js, AWS, Terraform, Docker, Kubernetes, LangChain, RAG." />
+<meta name="theme-color" content="#05060f" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <p class="mono">initializing environment<span class="dots"></span></p>
+    <div class="loader-bar"><span id="loader-progress"></span></div>
+  </div>
+</div>
+
+<canvas id="bg"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="scroll-progress"><span id="scroll-bar"></span></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo"><span>G</span>nanaprakash<em>.</em></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow mono reveal">// hello world, I'm</p>
+    <h1 class="hero-name reveal">Gnanaprakash <span class="grad">D</span></h1>
+    <h2 class="hero-role reveal">
+      <span id="typed"></span><span class="caret">|</span>
+    </h2>
+    <p class="hero-sub reveal">
+      Final-year CSE student building full-stack web apps with React and Node.js,
+      automating cloud infrastructure, and exploring LLMs, RAG and AI agents.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#projects" class="btn btn-primary magnetic"><span>View Projects</span></a>
+      <a href="#contact" class="btn btn-ghost magnetic"><span>Get in touch</span></a>
+    </div>
+    <div class="hero-meta reveal mono">
+      <span><b>8.34</b> CGPA</span>
+      <span><b>91.83%</b> Class XII</span>
+      <span><b>React</b> · Node.js · AWS · K8s</span>
+    </div>
+  </div>
+  <div class="scroll-hint mono">scroll<span></span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="section-tag mono reveal">01 / about</p>
+    <h2 class="section-title reveal">Engineering <span class="grad">reliable systems</span>,<br/>from code to cloud.</h2>
+    <div class="about-grid">
+      <div class="glass about-card reveal">
+        <p>
+          I'm a final-year Computer Science and Engineering student with a strong foundation in
+          <b>C, C++, Java and Python</b>, Data Structures &amp; Algorithms, and core CS concepts.
+        </p>
+        <p>
+          On the web side, I build full-stack applications with <b>HTML, CSS, JavaScript, React.js
+          and Node.js</b>. I also have hands-on experience with <b>AWS</b> and DevOps tooling —
+          <b>Terraform, Docker, Kubernetes, Ansible and Jenkins</b> — and I'm exploring
+          <b>LLMs, Generative AI and RAG</b> to build smarter software.
+        </p>
+        <p>
+          I'm interested in building scalable applications, automating cloud infrastructure,
+          and developing practical technical solutions.
+        </p>
+        <div class="tags">
+          <span>Full-Stack Web</span><span>Cloud</span><span>DevOps</span><span>AI / LLM</span><span>DSA</span>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="glass stat reveal"><h3 data-count="2">0</h3><p>Major projects</p></div>
+        <div class="glass stat reveal"><h3 data-count="5">0</h3><p>Languages</p></div>
+        <div class="glass stat reveal"><h3 data-count="5">0</h3><p>Web technologies</p></div>
+        <div class="glass stat reveal"><h3 data-count="7">0</h3><p>AWS services</p></div>
+        <div class="glass stat reveal"><h3 data-count="9">0</h3><p>DevOps tools</p></div>
+        <div class="glass stat reveal"><h3 data-count="6">0</h3><p>AI tools</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <p class="section-tag mono reveal">02 / skills</p>
+    <h2 class="section-title reveal">A toolkit across the <span class="grad">full stack</span>.</h2>
+
+    <div class="skills-layout">
+      <div class="skills-sphere reveal">
+        <canvas id="sphere"></canvas>
+        <p class="mono hint">drag to rotate · hover a skill</p>
+      </div>
+
+      <div class="skill-groups">
+        <div class="glass skill-card tilt reveal">
+          <h3><i class="ic">🌐</i> Web Development</h3>
+          <div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>Express.js</span></div>
+        </div>
+        <div class="glass skill-card tilt reveal">
+          <h3><i class="ic">⌨</i> Programming</h3>
+          <div class="chips"><span>C</span><span>C++</span><span>Java</span><span>Python</span></div>
+        </div>
+        <div class="glass skill-card tilt reveal">
+          <h3><i class="ic">☁</i> Cloud · AWS</h3>
+          <div class="chips"><span>EC2</span><span>VPC</span><span>IAM</span><span>S3</span><span>RDS</span><span>ALB</span><span>CloudWatch</span></div>
+        </div>
+        <div class="glass skill-card tilt reveal">
+          <h3><i class="ic">⚙</i> DevOps &amp; Automation</h3>
+          <div class="chips"><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>Ansible</span><span>Jenkins</span><span>Helm</span><span>Argo CD</span><span>CI/CD</span></div>
+        </div>
+        <div class="glass skill-card tilt reveal">
+          <h3><i class="ic">🧠</i> AI Technologies</h3>
+          <div class="chips"><span>Prompt Engineering</span><span>NLP</span><span>LangChain</span><span>AI Agents</span><span>RAG</span><span>MCP</span></div>
+        </div>
+        <div class="glass skill-card tilt reveal">
+          <h3><i class="ic">🗄</i> Databases</h3>
+          <div class="chips"><span>MySQL</span><span>SQL</span><span>Oracle</span><span>DBMS</span></div>
+        </div>
+        <div class="glass skill-card tilt reveal">
+          <h3><i class="ic">🛠</i> Tools &amp; CS Core</h3>
+          <div class="chips"><span>Git</span><span>GitHub</span><span>Linux</span><span>Bash</span><span>DSA</span><span>OOP</span><span>OS</span><span>Networks</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <p class="section-tag mono reveal">03 / experience</p>
+    <h2 class="section-title reveal">Where I've <span class="grad">shipped</span> things.</h2>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <article class="glass tl-item reveal">
+        <span class="tl-dot"></span>
+        <div class="tl-head">
+          <div>
+            <h3>Cloud &amp; DevOps Intern</h3>
+            <p class="company">Odugaatech Pvt. Ltd.</p>
+          </div>
+          <span class="badge mono">Internship</span>
+        </div>
+        <ul>
+          <li>Worked with AWS cloud infrastructure and Infrastructure as Code using <b>Terraform</b>.</li>
+          <li>Practiced infrastructure provisioning and server configuration automation with <b>Terraform and Ansible</b>.</li>
+          <li>Containerized applications with <b>Docker</b> and deployed / managed containers on <b>Kubernetes</b>.</li>
+          <li>Developed <b>Jenkins CI/CD pipelines</b> to automate application build and deployment workflows.</li>
+          <li>Used Git, GitHub and Linux for version control and system administration.</li>
+          <li>Gained practical exposure to cloud deployment, container orchestration and DevOps practices.</li>
+        </ul>
+        <div class="chips small"><span>AWS</span><span>Terraform</span><span>Ansible</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>Linux</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="section-tag mono reveal">04 / projects</p>
+    <h2 class="section-title reveal">Selected <span class="grad">work</span>.</h2>
+
+    <div class="projects">
+      <article class="project glass tilt reveal">
+        <div class="project-glow"></div>
+        <div class="project-top">
+          <span class="num mono">01</span>
+          <span class="badge mono">Full-Stack</span>
+        </div>
+        <h3>Smart Public Distribution System</h3>
+        <p class="stack mono">React · Node.js · Express.js · MySQL</p>
+        <p class="desc">A web-based ration distribution platform that improves efficiency and transparency in public distribution services.</p>
+        <ul>
+          <li>Priority-based ration allocation with automated scheduling to help reduce waiting times.</li>
+          <li>Role-based interfaces for PDS officers and staff to manage stock, beneficiaries and schedules.</li>
+          <li>Authentication and OTP-based ration collection.</li>
+          <li>Stock management and scheduling workflows designed for reliable distribution.</li>
+        </ul>
+        <div class="chips small"><span>React</span><span>Node.js</span><span>Express.js</span><span>MySQL</span></div>
+        <a class="link-row" href="https://github.com/gnanaprakashio" target="_blank" rel="noopener">View on GitHub <i>→</i></a>
+      </article>
+
+      <article class="project glass tilt reveal">
+        <div class="project-glow alt"></div>
+        <div class="project-top">
+          <span class="num mono">02</span>
+          <span class="badge mono">Cloud · DevOps</span>
+        </div>
+        <h3>Automated Cloud Deployment</h3>
+        <p class="stack mono">AWS · Terraform · Docker · Kubernetes · Jenkins</p>
+        <p class="desc">An end-to-end pipeline from infrastructure provisioning to containerized application deployment.</p>
+        <ul>
+          <li>Provisioned AWS infrastructure with Terraform for repeatable deployments.</li>
+          <li>Containerized applications with Docker and deployed them on Kubernetes.</li>
+          <li>Built Jenkins CI/CD pipelines to automate build and deployment workflows.</li>
+          <li>Practiced infrastructure automation, container orchestration and cloud deployment.</li>
+        </ul>
+        <div class="chips small"><span>AWS</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span></div>
+        <a class="link-row" href="https://github.com/gnanaprakashio" target="_blank" rel="noopener">View on GitHub <i>→</i></a>
+      </article>
+    </div>
+
+    <div class="pipeline glass reveal">
+      <p class="mono tag">// deployment flow</p>
+      <div class="flow">
+        <span>Git</span><i>→</i><span>Jenkins</span><i>→</i><span>Docker</span><i>→</i><span>Terraform</span><i>→</i><span>AWS</span><i>→</i><span>Kubernetes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <p class="section-tag mono reveal">05 / education &amp; more</p>
+    <h2 class="section-title reveal">Learning, <span class="grad">continuously</span>.</h2>
+
+    <div class="edu-grid">
+      <div class="glass edu tilt reveal">
+        <span class="badge mono">Expected May 2027</span>
+        <h3>B.E. Computer Science &amp; Engineering</h3>
+        <p class="company">Government College of Engineering, Salem</p>
+        <div class="gauge"><div class="gauge-fill" data-w="83.4"></div></div>
+        <p class="mono small-text">CGPA 8.34 / 10</p>
+      </div>
+      <div class="glass edu tilt reveal">
+        <span class="badge mono">Class XII</span>
+        <h3>Higher Secondary</h3>
+        <p class="company">Gugai Higher Secondary School, Salem</p>
+        <div class="gauge"><div class="gauge-fill" data-w="91.83"></div></div>
+        <p class="mono small-text">91.83%</p>
+      </div>
+      <div class="glass edu tilt reveal">
+        <span class="badge mono">Certification</span>
+        <h3>Generative AI</h3>
+        <p class="company">GUVI</p>
+        <p class="small-text muted">Foundations of Generative AI, LLMs and prompt engineering.</p>
+      </div>
+      <div class="glass edu tilt reveal">
+        <span class="badge mono">Achievements</span>
+        <h3>Contests &amp; Workshops</h3>
+        <p class="small-text muted">Participated in coding contests and technical workshops related to cloud computing and DevOps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <p class="section-tag mono reveal">06 / contact</p>
+    <h2 class="section-title big reveal">Let's build something <span class="grad">great</span> together.</h2>
+    <p class="contact-sub reveal">Open to internships and entry-level roles in Full-Stack Development, Cloud, DevOps and Software Engineering.</p>
+
+    <div class="contact-grid">
+      <a class="glass contact-card magnetic reveal" href="mailto:gnanaprakashdio@gmail.com">
+        <span class="mono">email</span><b>gnanaprakashdio@gmail.com</b>
+      </a>
+      <a class="glass contact-card magnetic reveal" href="tel:+919087032508">
+        <span class="mono">phone</span><b>+91 90870 32508</b>
+      </a>
+      <a class="glass contact-card magnetic reveal" href="https://linkedin.com/in/gnanaprakash-d-641434351" target="_blank" rel="noopener">
+        <span class="mono">linkedin</span><b>gnanaprakash-d</b>
+      </a>
+      <a class="glass contact-card magnetic reveal" href="https://github.com/gnanaprakashio" target="_blank" rel="noopener">
+        <span class="mono">github</span><b>gnanaprakashio</b>
+      </a>
+    </div>
+
+    <form class="glass contact-form reveal" id="contact-form">
+      <div class="row">
+        <input type="text" id="f-name" placeholder="Your name" required />
+        <input type="email" id="f-email" placeholder="Your email" required />
+      </div>
+      <textarea id="f-msg" rows="4" placeholder="Your message" required></textarea>
+      <button class="btn btn-primary magnetic" type="submit"><span>Send message</span></button>
+      <p class="mono form-note">Opens your email app with the message pre-filled.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Gnanaprakash D · Salem, Tamil Nadu, India</p>
+  <p class="mono">built with three.js</p>
+</footer>
+
+<script src="dist/app.js"></script>
+</body>
+</html>
